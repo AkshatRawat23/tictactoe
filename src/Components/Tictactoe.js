@@ -8,22 +8,6 @@ const Tictactoe = () => {
     const [winner, setWinner] = useState("")
 
     const checkForWinner = (squares) => {
-        // let combos = {
-        //     across: [
-        //         [0, 1, 2],
-        //         [3, 4, 5],
-        //         [6, 7, 8],
-        //     ],
-        //     down: [
-        //         [0, 3, 6],
-        //         [1, 4, 7],
-        //         [2, 5, 8],
-        //     ],
-        //     diagonal: [
-        //         [0, 4, 8],
-        //         [2, 4, 6],
-        //     ],
-        // };
 
         let combos = [
             [0, 1, 2],
@@ -36,24 +20,7 @@ const Tictactoe = () => {
             [2, 4, 6],
         ];
 
-        // for (let combo in combos) {
 
-        //     combos[combo].forEach((pattern) => {
-        //         console.log(pattern[0])
-        //         if (
-        //             squares[pattern[0]] === '' ||
-        //             squares[pattern[1]] === '' ||
-        //             squares[pattern[2]] === ''
-        //         ) {
-        //         } else if (
-        //             squares[pattern[0]] === squares[pattern[1]] &&
-        //             squares[pattern[1]] === squares[pattern[2]]
-        //         ) {
-        //             setWinner(squares[pattern[0]])
-
-        //         }
-        //     });
-        // }
 
         for (let i = 0; i < combos.length; i++) {
             const [a, b, c] = combos[i];
