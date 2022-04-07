@@ -3,3 +3,17 @@ table td {
     width: 100px;
     height: 100px;
 }
+
+.btn {
+  display: inline-block;
+  background: white;
+  color: black;
+  padding: 0.25rem 0.75rem;
+  border-color: transparent;
+   font-size: 1rem;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+
+}
